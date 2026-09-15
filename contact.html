@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BCCL Welfare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js?v=5" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">BCCL Welfare</a>
+            <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="grievance.html">Grievance Form</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <p class="eyebrow">Contact Us</p>
+                <h1>BCCL Employees Welfare Office, Dhanbad</h1>
+                <p>For service questions, welfare information, and township coordination.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-wrapper">
+                <div class="contact-info">
+                    <h2>Office Details</h2>
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>Koyla Bhawan, Koyla Nagar, Dhanbad, Jharkhand 826005</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:welfare@bccl.gov.in">welfare@bccl.gov.in</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p>0326-2236000</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Office Hours</h3>
+                        <p>Monday to Friday - 9:30 AM to 5:00 PM
+                            <br>Saturday - 9:30 AM to 1:30 PM
+                            <br>Sunday - Closed</br>
+                        </p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h2>Send a Message</h2>
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" rows="5" required></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Send Message</button>
+                    <p class="form-message" id="contactMessageBox" hidden></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>BCCL Welfare</h4>
+                <p>Employees Welfare and Township Management portal for Bharat Coking Coal Limited, Dhanbad.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="grievance.html">Grievance Form</a>
+            </div>
+            <div>
+                <h4>Admin</h4>
+                <a href="admin.html">View Records</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

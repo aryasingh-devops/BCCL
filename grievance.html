@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Form - BCCL Welfare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js?v=5" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">BCCL Welfare</a>
+            <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="grievance.html" class="active">Grievance Form</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <p class="eyebrow">Grievance Form</p>
+                <h1>Submit township or welfare issue</h1>
+                <p>Your grievance will be saved in the BCCL welfare database for admin review.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container form-shell">
+                <form id="grievanceForm" class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="employeeName">Employee Name</label>
+                            <input id="employeeName" name="employee_name" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="employeeId">Employee ID</label>
+                            <input id="employeeId" name="employee_id" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <input id="department" name="department" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="township">Township / Area</label>
+                            <input id="township" name="township" type="text" placeholder="Koyla Nagar, Lodna, Sijua..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quarterNo">Quarter Number</label>
+                            <input id="quarterNo" name="quarter_no" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" name="category" required>
+                                <option value="">Select category</option>
+                                <option>Housing</option>
+                                <option>Water Supply</option>
+                                <option>Electricity</option>
+                                <option>Sanitation</option>
+                                <option>Roads and Drainage</option>
+                                <option>Healthcare</option>
+                                <option>Education</option>
+                                <option>Other Welfare</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="6" required></textarea>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Submit Grievance</button>
+                    <p class="form-message" id="grievanceMessage" hidden></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>BCCL Welfare</h4>
+                <p>Employees Welfare and Township Management portal for Bharat Coking Coal Limited, Dhanbad.</p>
+            </div>
+            <div>
+                <h4>Admin</h4>
+                <a href="admin.html">View Grievance Records</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Koyla Bhawan, Koyla Nagar, Dhanbad, Jharkhand 826005</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

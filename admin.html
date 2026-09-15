@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - BCCL Welfare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js?v=5" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">BCCL Welfare</a>
+            <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="grievance.html">Grievance Form</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="admin.html" class="active">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <p class="eyebrow">Admin Page</p>
+                <h1>Recorded grievance data</h1>
+                <p>Review employee welfare and township grievances saved in the SQLite database.</p>
+            </div>
+        </section>
+
+        <section class="section" id="adminLoginSection">
+            <div class="container form-shell">
+                <form id="adminLoginForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="adminUsername">Admin Username</label>
+                        <input id="adminUsername" name="username" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPassword">Admin Password</label>
+                        <input id="adminPassword" name="password" type="password" required>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Login</button>
+                    <p class="form-message" id="adminLoginMessage" hidden></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="adminPanel" hidden>
+            <div class="container admin-toolbar">
+                <div>
+                    <label for="statusFilter">Filter by status</label>
+                    <select id="statusFilter">
+                        <option value="">All</option>
+                        <option value="Pending">Pending</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Resolved">Resolved</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="btn btn-secondary" id="refreshRecords" type="button">Refresh</button>
+                    <button class="btn btn-secondary" id="adminLogout" type="button">Logout</button>
+                </div>
+            </div>
+            <div class="container">
+                <p class="form-message" id="adminMessage" hidden></p>
+            </div>
+            <div class="container table-card">
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Date</th>
+                                <th>Employee</th>
+                                <th>Department</th>
+                                <th>Township</th>
+                                <th>Category</th>
+                                <th>Subject</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recordsTable">
+                            <tr>
+                                <td colspan="9">Loading records...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>BCCL Welfare</h4>
+                <p>Admin dashboard for recorded employee grievance data.</p>
+            </div>
+            <div>
+                <h4>Forms</h4>
+                <a href="grievance.html">Submit Grievance</a>
+            </div>
+            <div>
+                <h4>Database</h4>
+                <p>SQLite file: bccl_welfare.db</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
